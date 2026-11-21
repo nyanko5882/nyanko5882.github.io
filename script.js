@@ -1,9 +1,10 @@
 const UI = {
-    tablist: document.getElementById('tablist')
+    tablist: document.getElementById('tablist'),
+    openmenu: document.getElementById('openmenu')
 };
 
 const isMenuOpened = false;
-function openmenu() {
+UI.openmenu.addEventListener("click", () => {
     console.log("open");
     if (isMenuOpened === false) {
         UI.tablist.style = "transform: translateX(0);"
@@ -12,4 +13,4 @@ function openmenu() {
         UI.tablist.style = "transform: translateX(-100%);"
         isMenuOpened = false;
     }
-};
+});
