@@ -1,5 +1,6 @@
 :root {
     --background: #ffffff;
+    --highlight1: #d8d8d8;
 }
 body {
     width: 100%;
@@ -18,9 +19,20 @@ html {
     transition: 200ms ease;
     transform: translateX(-100%);
     position: absolute;
+    display: flex;
 }
 #openmenu {
     font-size: 24px;
     position: absolute;
     background-color: var(--background);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+#openmenu:hover {
+    background-color: var(--highlight1);
+}
+.tab {
+    width: 90%;
+    gap: 4px;
 }
