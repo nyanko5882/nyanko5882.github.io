@@ -26,6 +26,9 @@ html {
     justify-content: left;
     z-index: 0;
 }
+#tablist.opened {
+    transform: none !important;
+}
 #openmenu {
     font-size: 24px;
     position: absolute;
